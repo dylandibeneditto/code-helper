@@ -3,3 +3,15 @@
     font-family: 'Bricolage Grotesque';
     src: url('../../static/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf')
 }
+
+div.gridhoriz {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+div.gridvert {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
