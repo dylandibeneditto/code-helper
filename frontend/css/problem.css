@@ -6,7 +6,7 @@
 div#content {
     height: 100vh;
     width: 100vw;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1rem 90vh;
 }
 
 div#main-wrap {
@@ -14,5 +14,22 @@ div#main-wrap {
 }
 
 div#container {
-    height: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+div#prompt {
+    background-color: gray;
+}
+
+div#container-wrap {
+    background-color: gray;
+}
+
+div.window-title {
+    padding: .25rem;
+}
+
+div.margin {
+    border-bottom-left-radius: .7rem;
 }
