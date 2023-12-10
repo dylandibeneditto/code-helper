@@ -1,0 +1,204 @@
+{
+    "problems": [
+        {
+            "title": "Problem 1: Hello World",
+            "description": "Write a function that prints 'Hello, World!' to the console. This is a basic introduction to writing functions in JavaScript."
+        },
+        {
+            "title": "Problem 2: Simple Calculator",
+            "description": "Create a function that takes two numbers and an operator (+, -, *, /) as arguments and performs the corresponding operation."
+        },
+        {
+            "title": "Problem 3: Odd or Even",
+            "description": "Write a function that determines if a given number is odd or even. Print 'Odd' or 'Even' accordingly."
+        },
+        {
+            "title": "Problem 4: Array Sum",
+            "description": "Write a function that calculates the sum of all elements in an array. This problem introduces array manipulation."
+        },
+        {
+            "title": "Problem 5: Reverse Array",
+            "description": "Create a function that reverses the elements of an array. For example, [1, 2, 3] becomes [3, 2, 1]."
+        },
+        {
+            "title": "Problem 6: Factorial",
+            "description": "Write a function that calculates the factorial of a given number. This problem introduces recursion."
+        },
+        {
+            "title": "Problem 7: Fibonacci Sequence",
+            "description": "Write a function that generates the first n terms of the Fibonacci sequence. The Fibonacci sequence is defined by the recurrence relation: F(n) = F(n-1) + F(n-2) with initial conditions F(0) = 0 and F(1) = 1."
+        },
+        {
+            "title": "Problem 8: Palindrome Checker",
+            "description": "Write a function that checks if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward."
+        },
+        {
+            "title": "Problem 9: Prime Number Checker",
+            "description": "Write a function that determines whether a given number is prime or not. This problem involves basic number theory and conditionals."
+        },
+        {
+            "title": "Problem 10: Simple ToDo List",
+            "description": "Create a simple command-line ToDo list application. Users should be able to add, remove, and list tasks."
+        },
+        {
+            "title": "Problem 11: Find Maximum Number",
+            "description": "Write a function that takes an array of numbers as an argument and returns the maximum number in the array."
+        },
+        {
+            "title": "Problem 12: Vowel Counter",
+            "description": "Write a function that counts the number of vowels in a given string. Consider both uppercase and lowercase vowels."
+        },
+        {
+            "title": "Problem 13: Power Function",
+            "description": "Write a function that calculates the power of a number. The function should take two parameters: the base and the exponent."
+        },
+        {
+            "title": "Problem 14: Average Calculator",
+            "description": "Write a function that calculates the average of an array of numbers."
+        },
+        {
+            "title": "Problem 15: Array Deduplication",
+            "description": "Write a function that removes duplicate elements from an array and returns a new array without duplicates."
+        },
+        {
+            "title": "Problem 16: String Capitalization",
+            "description": "Write a function that capitalizes the first letter of each word in a given sentence."
+        },
+        {
+            "title": "Problem 17: Leap Year Checker",
+            "description": "Write a function that determines if a given year is a leap year. Leap years are divisible by 4, but if a year is divisible by 100, it must also be divisible by 400."
+        },
+        {
+            "title": "Problem 18: Array Rotation",
+            "description": "Write a function that rotates the elements of an array to the left by a given number of positions."
+        },
+        {
+            "title": "Problem 19: Median Finder",
+            "description": "Write a function that finds the median of an array of numbers. The median is the middle value when the array is sorted."
+        },
+        {
+            "title": "Problem 20: Common Elements",
+            "description": "Write a function that finds and returns the common elements between two arrays."
+        },
+        {
+            "title": "Problem 21: Simple Encryption",
+            "description": "Write a function that encrypts a given string using a simple substitution cipher. For example, replace each letter with the one following it in the alphabet."
+        },
+        {
+            "title": "Problem 22: Array Chunking",
+            "description": "Write a function that divides an array into smaller arrays of a specified size."
+        },
+        {
+            "title": "Problem 23: Array Flattening",
+            "description": "Write a function that flattens a nested array, transforming it into a one-dimensional array."
+        },
+        {
+            "title": "Problem 24: Prime Factorization",
+            "description": "Write a function that returns the prime factorization of a given number."
+        },
+        {
+            "title": "Problem 25: Digit Sum",
+            "description": "Write a function that calculates the sum of the digits of a given number."
+        },
+        {
+            "title": "Problem 26: Anagram Detector",
+            "description": "Write a function that checks if two strings are anagrams of each other."
+        },
+        {
+            "title": "Problem 27: Array Shuffling",
+            "description": "Write a function that shuffles the elements of an array randomly."
+        },
+        {
+            "title": "Problem 28: Caesar Cipher (Advanced)",
+            "description": "Enhance your previous Caesar cipher function to include a customizable shift value and handle both encryption and decryption."
+        },
+        {
+            "title": "Problem 29: FizzBuzz (Advanced)",
+            "description": "Revisit the classic FizzBuzz problem, but this time, allow customizable rules for different numbers and phrases."
+        },
+        {
+            "title": "Problem 30: Binary to Decimal Converter",
+            "description": "Write a function that converts a binary number (given as a string) to its decimal equivalent."
+        },
+        {
+            "title": "Problem 31: Decimal to Binary Converter",
+            "description": "Write a function that converts a decimal number to its binary equivalent."
+        },
+        {
+            "title": "Problem 32: Bubble Sort",
+            "description": "Implement the bubble sort algorithm to sort an array in ascending order."
+        },
+        {
+            "title": "Problem 33: Linear Search",
+            "description": "Implement the linear search algorithm to find the index of a given element in an array."
+        },
+        {
+            "title": "Problem 34: Concatenation",
+            "description": "Write a function that concatenates two arrays without using the built-in array concatenation method."
+        },
+        {
+            "title": "Problem 35: Palindrome Number",
+            "description": "Write a function that checks if a given number is a palindrome."
+        },
+        {
+            "title": "Problem 36: Unique Paths",
+            "description": "Given a grid of m x n dimensions, write a function to calculate the number of unique paths to reach the bottom-right corner. You can only move down or to the right."
+        },
+        {
+            "title": "Problem 37: Parentheses Checker",
+            "description": "Write a function that checks if a given string of parentheses is balanced. For example, '(()())' is balanced, but '(()' is not."
+        },
+        {
+            "title": "Problem 38: Two Sum",
+            "description": "Given an array of integers, find two numbers such that they add up to a specific target sum. Return the indices of the two numbers."
+        },
+        {
+            "title": "Problem 39: Binary Search (Advanced)",
+            "description": "Enhance your binary search implementation to handle an array of objects and allow custom comparison functions."
+        },
+        {
+            "title": "Problem 40: String Rotation",
+            "description": "Write a function that determines if one string is a rotation of another. For example, 'waterbottle' is a rotation of 'erbottlewat'."
+        },
+        {
+            "title": "Problem 41: Substring Search",
+            "description": "Write a function that checks if a given substring exists within a larger string."
+        },
+        {
+            "title": "Problem 42: Digital Root",
+            "description": "Write a function that finds the digital root of a given non-negative integer. The digital root is the recursive sum of all the digits until a single-digit number is obtained."
+        },
+        {
+            "title": "Problem 43: Matrix Multiplication",
+            "description": "Write a function that multiplies two matrices. This problem involves matrix manipulation and algorithms."
+        },
+        {
+            "title": "Problem 44: Run-Length Encoding",
+            "description": "Write a function that performs run-length encoding on a given string. Replace repeated characters with the count followed by the character."
+        },
+        {
+            "title": "Problem 45: Run-Length Decoding",
+            "description": "Write a function that performs run-length decoding on a given string. Convert the encoded string back to its original form."
+        },
+        {
+            "title": "Problem 46: Sum of Primes",
+            "description": "Write a function that calculates the sum of the first n prime numbers."
+        },
+        {
+            "title": "Problem 47: Power Set",
+            "description": "Write a function that generates the power set of a given set. The power set is the set of all subsets, including the empty set and the set itself."
+        },
+        {
+            "title": "Problem 48: String Compression",
+            "description": "Write a function that performs basic string compression. Replace repeated characters with the character followed by the count."
+        },
+        {
+            "title": "Problem 49: Square Root Approximation",
+            "description": "Write a function that approximates the square root of a given non-negative integer using the Babylonian method."
+        },
+        {
+            "title": "Problem 50: Collatz Conjecture",
+            "description": "Write a function that tests the Collatz conjecture for a given starting number. The conjecture states that no matter which positive integer n you start with, repeatedly applying the following rule will eventually reach the value 1: if n is even, divide it by 2; if n is odd, multiply it by 3 and add 1."
+        }
+    ]
+}
