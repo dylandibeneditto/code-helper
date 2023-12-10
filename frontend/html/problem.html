@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>code-helper</title>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-        <link rel="stylesheet" href="../css/landing.css" />
-	</head>
-	<body>
+
+<head>
+	<title>code-helper</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="../css/problem.css" />
+</head>
+
+<body>
+	<div id="content">
+		<div id="prompt">
+			<h2 id="title">1. Hello World</h2>
+		</div>
+
 		<div id="container"></div>
+	</div>
+	<!-- OR ANY OTHER AMD LOADER HERE INSTEAD OF loader.js -->
+	<script src="../../node_modules/monaco-editor/min/vs/loader.js"></script>
+	<script>
+		require.config({ paths: { vs: '../../node_modules/monaco-editor/min/vs' } });
 
-		<!-- OR ANY OTHER AMD LOADER HERE INSTEAD OF loader.js -->
-		<script src="../../node_modules/monaco-editor/min/vs/loader.js"></script>
-		<script>
-			require.config({ paths: { vs: '../../node_modules/monaco-editor/min/vs' } });
-
-			require(['vs/editor/editor.main'], function () {
-				var editor = monaco.editor.create(document.getElementById('container'), {
-					value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-					language: 'javascript',
-                    automaticLayout: true
-				});
-
-                editor.updateOptions({theme: 'vs-dark'})
+		require(['vs/editor/editor.main'], function () {
+			var editor = monaco.editor.create(document.getElementById('container'), {
+				value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+				language: 'javascript',
+				automaticLayout: true
 			});
-		</script>
 
-        <script src="../experience/html-helpers/problem.ts"></script>
-	</body>
+			editor.updateOptions({ theme: 'vs-dark' })
+		});
+	</script>
+
+	<script src="../experience/html-helpers/problem.ts"></script>
+</body>
+
 </html>
