@@ -2,22 +2,38 @@
 <html>
 
 <head>
+
 	<title>code-helper</title>
+	
+	
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	
 	<link rel="stylesheet" href="../css/styles/utils.css" />
 	<link rel="stylesheet" href="../css/styles/generic.css" />
 	<link rel="stylesheet" href="../css/problem.css" />
+
 </head>
 
 <body>
-	<div id="content" class="gridhoriz">
-		<div id="prompt">
-			<h2 id="title">1. Hello World</h2>
-		</div>
+	
+	
+	
+	
+	<div id="content">
+		<div id="main-wrap" class="gridhoriz">
+			<div id="prompt">
+				<h2 id="title">1. Hello World</h2>
+			</div>
 
-		<div id="container"></div>
+			<div id="container"></div>
+		</div>
 	</div>
-	<!-- OR ANY OTHER AMD LOADER HERE INSTEAD OF loader.js -->
+
+
+
+
+
 	<script src="../../node_modules/monaco-editor/min/vs/loader.js"></script>
 	<script>
 		require.config({ paths: { vs: '../../node_modules/monaco-editor/min/vs' } });
@@ -34,6 +50,7 @@
 	</script>
 
 	<script src="../experience/html-helpers/problem.ts"></script>
+
 </body>
 
 </html>
