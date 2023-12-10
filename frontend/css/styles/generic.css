@@ -1,3 +1,7 @@
 * {
-    font-family: 'Bricolage_Grotesque', Helvetica, sans-serif !important;
+    font-family: 'Bricolage Grotesque', Helvetica, sans-serif;
+}
+
+div#container > * {
+    font-family: Menlo, Monaco, 'Courier New', monospace !important;
 }
