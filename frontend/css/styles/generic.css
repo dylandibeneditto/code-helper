@@ -1,7 +1,3 @@
-* {
+html {
     font-family: 'Bricolage Grotesque', Helvetica, sans-serif;
-}
-
-div#container > * {
-    font-family: Menlo, Monaco, 'Courier New', monospace !important;
 }
