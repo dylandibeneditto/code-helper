@@ -4,7 +4,8 @@
 }
 
 div#content {
-    height: 100vh;
+    height: 90vh;
+    bottom: 0;
     width: 100vw;
     grid-template-rows: 0rem auto;
     margin: auto;
@@ -13,6 +14,7 @@ div#content {
 div#main-wrap {
     margin: 1rem;
     height: inherit;
+    grid-template-columns: 20rem auto;
 }
 
 div#container {
@@ -25,7 +27,6 @@ div#container {
 
 div#prompt {
     background-color: var(--b);
-    overflow: scroll;
 }
 
 div#container-wrap {
@@ -35,4 +36,12 @@ div#container-wrap {
 
 div.window-title {
     padding: .25rem;
+}
+
+h2#prompt-name {
+    padding: 1rem;
+}
+
+p#prompt-description {
+    padding: 1rem;
 }
