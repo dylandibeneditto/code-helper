@@ -4,10 +4,6 @@ html {
     background: var(--bg);
 }
 
-* {
-    transition: all .1s ease;
-}
-
 :root {
     --bg: rgb(0,0,0);
     --b: rgb(30,30,30);
