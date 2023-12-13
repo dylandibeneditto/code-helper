@@ -1,3 +1,17 @@
 html {
     font-family: 'Bricolage Grotesque', Helvetica, sans-serif;
+    color: var(--tx);
+    background: var(--bg);
+}
+
+* {
+    transition: all .1s ease;
+}
+
+:root {
+    --bg: rgb(0,0,0);
+    --b: rgb(30,30,30);
+    --tx: rgb(212,212,212);
+    --s: rgb(70,70,70);
+    --t: rgb(40,40,40)
 }

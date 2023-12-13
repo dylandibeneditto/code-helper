@@ -6,30 +6,32 @@
 div#content {
     height: 100vh;
     width: 100vw;
-    grid-template-rows: 1rem 90vh;
+    grid-template-rows: 0rem auto;
+    margin: auto;
 }
 
 div#main-wrap {
     margin: 1rem;
+    height: inherit;
 }
 
 div#container {
-    height: 90vh;
+    height: 100%;
     overflow: hidden;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
 }
 
 div#prompt {
-    background-color: gray;
+    background-color: var(--b);
+    overflow: scroll;
 }
 
 div#container-wrap {
-    background-color: gray;
+    background-color: var(--b);
+    overflow: hidden;
 }
 
 div.window-title {
     padding: .25rem;
-}
-
-div.margin {
-    border-bottom-left-radius: .7rem;
 }
