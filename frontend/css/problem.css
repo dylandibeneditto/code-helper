@@ -22,7 +22,6 @@ div#container {
     overflow: hidden;
     border-bottom-left-radius: .7rem;
     border-bottom-right-radius: .7rem;
-    transition: all .25s ease;
 }
 
 div#prompt {
