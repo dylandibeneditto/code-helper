@@ -1,3 +1,5 @@
+import ProblemRunner from './problem-runner.js'
+
 export default class ProblemExperience {
     static instance;
     constructor() {
@@ -5,5 +7,7 @@ export default class ProblemExperience {
             return ProblemExperience.instance
         }
         ProblemExperience.instance = this;
+
+        this.problem_runner = new ProblemRunner();
     }
 }
