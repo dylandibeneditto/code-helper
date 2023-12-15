@@ -5,9 +5,9 @@ export default class ProblemRunner {
         this.experience = new Experience();
     }
 
-    run_problem(code) {
+    runProblem(caller, code) {
         try {
-            return eval(code)
+            return eval(caller+"\n"+code)
         } catch (error) {
             return error.message
         }

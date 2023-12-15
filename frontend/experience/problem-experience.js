@@ -8,6 +8,14 @@ export default class ProblemExperience {
         }
         ProblemExperience.instance = this;
 
-        this.problem_runner = new ProblemRunner();
+        window.onload = function () {
+            this.editor = document.querySelector("div#container")
+            this.codeDiv = document.getElementsByClassName("view-lines")
+            this.code = Array.from(this.codeDiv)[0].innerText;
+            console.log(this.code)
+            
+            this.problemRunner = new ProblemRunner();
+            console.log(this.problemRunner.runProblem(`x()`, this.code))
+        }
     }
 }
