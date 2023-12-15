@@ -8,6 +8,8 @@ export default class ProblemExperience {
         }
         ProblemExperience.instance = this;
 
+        this.editor, this.codeDiv, this.code, this.problemRunner;
+
         window.onload = function () {
             this.editor = document.querySelector("div#container")
             this.codeDiv = document.getElementsByClassName("view-lines")
@@ -15,7 +17,6 @@ export default class ProblemExperience {
             console.log(this.code)
             
             this.problemRunner = new ProblemRunner();
-            console.log(this.problemRunner.runProblem(`x()`, this.code))
         }
     }
 }
