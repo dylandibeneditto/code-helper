@@ -3,6 +3,9 @@ import Experience from './problem-experience.js'
 export default class ProblemRunner {
     constructor() {
         this.experience = new Experience();
+        this.editor = document.getElementsByClassName("view-lines")
+        this.code = Array.from(this.editor)[0].innerText;
+        this.experience.code = this.code;
 
         this.runButton = document.getElementById("run-code")
 
@@ -10,8 +13,8 @@ export default class ProblemRunner {
     }
 
     initListeners() {
-        console.log(this.runButton)
         this.runButton.addEventListener("mousedown", () => {
+
             console.log(this.runProblem('x()', this.experience.code))
         })
     }
@@ -20,7 +23,7 @@ export default class ProblemRunner {
         try {
             return eval(caller+"\n"+code)
         } catch (error) {
-            return error.message
+            return error
         }
     }
 }
