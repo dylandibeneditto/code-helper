@@ -52,7 +52,7 @@
 
 		require(['vs/editor/editor.main'], function () {
 			var editor = monaco.editor.create(document.getElementById('container'), {
-				value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+				value: ['/*',' * in { null }',' * out { string }',' */\n','function x() {', '\t', '}'].join('\n'),
 				language: 'javascript',
 				automaticLayout: true
 			});

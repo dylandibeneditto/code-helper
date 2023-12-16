@@ -14,8 +14,9 @@ export default class ProblemRunner {
 
     initListeners() {
         this.runButton.addEventListener("mousedown", () => {
-
-            console.log(this.runProblem('x()', this.experience.code))
+            this.code = Array.from(this.editor)[0].innerText;
+            this.experience.code = this.code;
+            console.log(this.runProblem('x()', this.code))
         })
     }
 
