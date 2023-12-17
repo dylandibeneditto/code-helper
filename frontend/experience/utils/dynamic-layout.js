@@ -8,21 +8,14 @@ export default class DynamicLayout {
 
         this.csize;
 
-
-
-        if (this.direction == "horizontal") {
-            this.container.style.gridTemplateColumns = this.suffix(currentSplit, "%").join(" ");
-        } else {
-            this.container.style.gridTemplateRows = currentSplit.join(" ");
-        }
+        this.displaySplit()
 
         this.resize()
-
-
 
         this.container.addEventListener("mousemove", (e) => {
             if (this.active) {
                 this.currentSplit = this.updateSplit(e.clientX);
+                this.displaySplit();
                 console.log(this.currentSplit)
             }
         })
@@ -40,13 +33,18 @@ export default class DynamicLayout {
         })
     }
 
+    displaySplit() {
+        if (this.direction == "horizontal") this.container.style.gridTemplateColumns = this.currentSplit.join(" ");
+        else this.container.style.gridTemplateRows = this.currentSplit.join(" ");
+    }
+
     resize() {
         if (this.direction == "horizontal") this.csize = this.container.clientHeight;
         else this.csize = this.container.clientWidth;
     }
 
     updateSplit(pixel) {
-        return this.suffix([pixel, " ", this.csize-pixel], 'px')
+        return [pixel, " ", this.csize-pixel]
     }
 
     suffix(origin, suffix) {
