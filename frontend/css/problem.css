@@ -47,7 +47,7 @@ p#prompt-description {
 
 div.divider {
     padding: .1rem;
-    margin: 0 .3rem;
+    margin: .1rem;
     border-radius: .2rem;
     transition: all .15s ease;
 }
@@ -56,10 +56,10 @@ div.divider:hover {
     background: var(--p)
 }
 
-div.divider.h {
+div.divider.v {
     cursor: ew-resize;
 }
 
-div.divider.v {
+div.divider.h {
     cursor: ns-resize;
 }

@@ -5,24 +5,34 @@ export default class DynamicLayout {
         this.direction = direction
         this.currentSplit = currentSplit
         this.active = false;
-        
-        if(this.direction == "horizontal") {
-            this.container.style.gridTemplateColumns = currentSplit.join(" ");
-            console.log(this.container.style.gridTemplateColumns)
+
+        this.currentSplit.suffix = function (suffix) {
+            for (let i = 0; i < this.length; i++) {
+                console.log(this[i])
+                this[i] += suffix;
+            }
+            return this;
+        }
+
+
+
+        if (this.direction == "horizontal") {
+            this.container.style.gridTemplateColumns = currentSplit.suffix("vw").join(" ");
+            console.log(currentSplit)
         } else {
             this.container.style.gridTemplateRows = currentSplit.join(" ");
         }
-        
-        document.addEventListener("mousemove", (e)=> {
-            if(this.active) {
+
+        document.addEventListener("mousemove", (e) => {
+            if (this.active) {
             }
         })
 
-        this.divider.addEventListener("mousedown", ()=> {
+        this.divider.addEventListener("mousedown", () => {
             this.active = true;
         })
 
-        document.addEventListener("mouseup", ()=> {
+        document.addEventListener("mouseup", () => {
             this.active = false;
         })
     }
