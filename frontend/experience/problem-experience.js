@@ -3,6 +3,7 @@ import DynamicLayout from './utils/dynamic-layout.js';
 
 //dedicated classes
 import ProblemRunner from './problem-runner.js'
+import PromptFormatter from './prompt-formatter.js'
 
 export default class ProblemExperience {
     static instance;
@@ -34,6 +35,7 @@ export default class ProblemExperience {
             this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60])
             this.codeDebug = new DynamicLayout(document.getElementById("code-wrap"), document.getElementById("code-debug"), "vertical", [40, 80])
 
+            this.promptFormatter = new PromptFormatter(this.prompt);
             this.problemRunner = new ProblemRunner();
         }
     }
