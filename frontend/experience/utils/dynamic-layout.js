@@ -42,7 +42,6 @@ export default class DynamicLayout {
     displaySplit() {
         const newSplit = Math.min(Math.max((((this.currentSplit-3)/this.csize)*100),this.min),this.max)
         const leftOver = 100-newSplit;
-        console.log(newSplit)
 
         if (this.direction == "horizontal") this.container.style.gridTemplateColumns = `${newSplit}% auto ${leftOver}%`;
         else this.container.style.gridTemplateRows = `${newSplit}% auto ${leftOver}%`;
@@ -51,7 +50,6 @@ export default class DynamicLayout {
     resize() {
         if (this.direction == "horizontal") this.csize = this.container.clientWidth;
         else this.csize = this.container.clientHeight;
-        console.log(this.csize, this.currentSplit, [this.container])
     }
 
     suffix(origin, suffix) {
