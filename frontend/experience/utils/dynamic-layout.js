@@ -17,8 +17,11 @@ export default class DynamicLayout {
 
         this.container.addEventListener("mousemove", (e) => {
             if (this.active) {
-                if (this.direction == "horizontal") this.currentSplit = e.clientX;
-                else this.currentSplit = e.clientY;
+
+                const rect = this.container.getBoundingClientRect();
+
+                if (this.direction == "horizontal") this.currentSplit = e.clientX - rect.left;
+                else this.currentSplit = e.clientY - rect.top;
                 this.displaySplit();
             }
         })
@@ -37,7 +40,7 @@ export default class DynamicLayout {
     }
 
     displaySplit() {
-        const newSplit = Math.min(Math.max((((this.currentSplit-18)/this.csize)*100),this.min),this.max)
+        const newSplit = Math.min(Math.max((((this.currentSplit-3)/this.csize)*100),this.min),this.max)
         const leftOver = 100-newSplit;
         console.log(newSplit)
 
