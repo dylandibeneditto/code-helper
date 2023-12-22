@@ -37,15 +37,18 @@
 			<div id="prompt-code" class="divider v"></div>
 
 			<div id="code-wrap">
-			<div id="container-wrap" class="rounded-borders">
-				<div id="code-title" class="window-title">code</div>
-				<div id="run-code">RUN</div>
-				<div id="container"></div>
+				<div id="container-wrap" class="rounded-borders">
+					<div id="code-title" class="window-title">code</div>
+					<div id="run-code">RUN</div>
+					<div id="container"></div>
+				</div>
+
+				<div id="code-debug" class="divider h"></div>
+
+				<div id="debug-wrap" class="rounded-borders">
+					<div id="code-title" class="window-title">debug</div>
+				</div>
 			</div>
-			<div id="debug-wrap" class="rounded-borders">
-				<div id="code-title" class="window-title">debug</div>
-			</div>
-		</div>
 		</div>
 	</div>
 
@@ -59,7 +62,7 @@
 
 		require(['vs/editor/editor.main'], function () {
 			var editor = monaco.editor.create(document.getElementById('container'), {
-				value: ['/*',' * in { null }',' * out { string }',' */\n','function x() {', '\t', '}'].join('\n'),
+				value: ['/*', ' * in { null }', ' * out { string }', ' */\n', 'function x() {', '\t', '}'].join('\n'),
 				language: 'javascript',
 				automaticLayout: true
 			});

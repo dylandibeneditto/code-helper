@@ -17,7 +17,8 @@ export default class DynamicLayout {
 
         this.container.addEventListener("mousemove", (e) => {
             if (this.active) {
-                this.currentSplit = e.clientX;
+                if (this.direction == "horizontal") this.currentSplit = e.clientX;
+                else this.currentSplit = e.clientY;
                 this.displaySplit();
             }
         })

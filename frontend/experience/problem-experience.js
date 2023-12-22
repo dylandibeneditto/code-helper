@@ -16,6 +16,7 @@ export default class ProblemExperience {
 
         window.onload = function () {
             this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,80])
+            this.codeDebug = new DynamicLayout(document.getElementById("code-wrap"), document.getElementById("code-debug"), "vertical", [20, 80])
 
             this.problemRunner = new ProblemRunner();
         }
