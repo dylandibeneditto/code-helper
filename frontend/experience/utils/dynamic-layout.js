@@ -1,9 +1,12 @@
 export default class DynamicLayout {
-    constructor(container, divider, direction, currentSplit) {
+    constructor(container, divider, direction, minMax) {
         this.container = container
         this.divider = divider
         this.direction = direction
-        this.currentSplit = currentSplit
+        this.min = minMax[0];
+        this.max = minMax[1];
+        
+        this.currentSplit = this.min
         this.active = false;
 
         this.csize;
@@ -33,11 +36,12 @@ export default class DynamicLayout {
     }
 
     displaySplit() {
-        let newSplit = Math.min(Math.max((((this.currentSplit-18)/this.csize)*100),20),80)
+        const newSplit = Math.min(Math.max((((this.currentSplit-18)/this.csize)*100),this.min),this.max)
+        const leftOver = 100-newSplit;
         console.log(newSplit)
 
-        if (this.direction == "horizontal") this.container.style.gridTemplateColumns = newSplit + "% auto auto";
-        else this.container.style.gridTemplateRows = newSplit + "% auto auto"
+        if (this.direction == "horizontal") this.container.style.gridTemplateColumns = `${newSplit}% auto ${leftOver}%`;
+        else this.container.style.gridTemplateRows = `${newSplit}% auto ${leftOver}%`;
     }
 
     resize() {
