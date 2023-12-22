@@ -70,5 +70,6 @@ div.prompt-monospace {
     background: var(--t);
     width: fit-content;
     border-radius: .2rem;
-    border: var(--s)
+    border: var(--s);
+    font-family: 'Roboto Mono'
 }

@@ -4,6 +4,12 @@
     src: url('../../static/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf')
 }
 
+/* Roboto Mono */
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../../static/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf')
+}
+
 div.grid-horizontal {
     display: grid;
     grid-auto-flow: column;
