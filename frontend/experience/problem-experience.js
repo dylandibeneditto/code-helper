@@ -16,7 +16,7 @@ export default class ProblemExperience {
         this.editor, this.codeDiv, this.code, this.problemRunner;
         this.prompt = {
             "title": '1. Hello World',
-            "description": 'Write a program which returns the string ;"Hello world";',
+            "description": 'Write a program which returns the string ;"Hello world"; HELLO ;"hello";',
             "cases": [
                 {
                     "input": "[]",
