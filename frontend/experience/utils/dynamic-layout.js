@@ -7,16 +7,15 @@ export default class DynamicLayout {
         this.active = false;
 
         this.csize;
+        
+        this.resize()
 
         this.displaySplit()
 
-        this.resize()
-
         this.container.addEventListener("mousemove", (e) => {
             if (this.active) {
-                this.currentSplit = this.updateSplit(e.clientX);
+                this.currentSplit = e.clientX;
                 this.displaySplit();
-                console.log(this.currentSplit)
             }
         })
 
@@ -34,17 +33,17 @@ export default class DynamicLayout {
     }
 
     displaySplit() {
-        if (this.direction == "horizontal") this.container.style.gridTemplateColumns = this.currentSplit.join(" ");
-        else this.container.style.gridTemplateRows = this.currentSplit.join(" ");
+        let newSplit = Math.min(Math.max((((this.currentSplit-18)/this.csize)*100),20),80)
+        console.log(newSplit)
+
+        if (this.direction == "horizontal") this.container.style.gridTemplateColumns = newSplit + "% auto auto";
+        else this.container.style.gridTemplateRows = newSplit + "% auto auto"
     }
 
     resize() {
-        if (this.direction == "horizontal") this.csize = this.container.clientHeight;
-        else this.csize = this.container.clientWidth;
-    }
-
-    updateSplit(pixel) {
-        return [pixel, " ", this.csize-pixel]
+        if (this.direction == "horizontal") this.csize = this.container.clientWidth;
+        else this.csize = this.container.clientHeight;
+        console.log(this.csize, this.currentSplit, [this.container])
     }
 
     suffix(origin, suffix) {
