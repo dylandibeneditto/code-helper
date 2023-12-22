@@ -13,6 +13,22 @@ export default class ProblemExperience {
         ProblemExperience.instance = this;
 
         this.editor, this.codeDiv, this.code, this.problemRunner;
+        this.prompt = {
+            title: '1. Hello World',
+            description: 'Write a program which returns the string ;"Hello world";',
+            cases: [
+                {
+                    "input": "[]",
+                    "output": '"Hello world"',
+                    "explanation": ';x() // "Hello world";\nThe function should always return "Hello world"'
+                },
+                {
+                    "input": '[10,"hello",[]]',
+                    "output": '"Hello world"',
+                    "explanation": ';x(10,"hello",[]) // "Hello world";\nThe function should always return "Hello world"'
+                }
+            ]
+        }
 
         window.onload = function () {
             this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60])
