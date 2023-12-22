@@ -15,27 +15,29 @@ export default class ProblemExperience {
 
         this.editor, this.codeDiv, this.code, this.problemRunner;
         this.prompt = {
-            title: '1. Hello World',
-            description: 'Write a program which returns the string ;"Hello world";',
-            cases: [
+            "title": '1. Hello World',
+            "description": 'Write a program which returns the string ;"Hello world";',
+            "cases": [
                 {
-                    input: "[]",
-                    output: '"Hello world"',
-                    explanation: ';x() // "Hello world";\nThe function should always return "Hello world"'
+                    "input": "[]",
+                    "output": '"Hello world"',
+                    "explanation": ';x() // "Hello world";\nThe function should always return "Hello world"'
                 },
                 {
-                    input: '[10,"hello",[]]',
-                    output: '"Hello world"',
-                    explanation: ';x(10,"hello",[]) // "Hello world";\nThe function should always return "Hello world"'
+                    "input": '[10,"hello",[]]',
+                    "output": '"Hello world"',
+                    "explanation": ';x(10,"hello",[]) // "Hello world";\nThe function should always return "Hello world"'
                 }
             ]
         }
+        
+        console.log(this.prompt)
+        this.promptFormatter = new PromptFormatter(this.prompt);
 
         window.onload = function () {
             this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60])
             this.codeDebug = new DynamicLayout(document.getElementById("code-wrap"), document.getElementById("code-debug"), "vertical", [40, 80])
 
-            this.promptFormatter = new PromptFormatter(this.prompt);
             this.problemRunner = new ProblemRunner();
         }
     }
