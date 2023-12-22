@@ -27,6 +27,7 @@ div#container {
 
 div#prompt {
     background-color: var(--b);
+    overflow: hidden;
 }
 
 div#container-wrap {
@@ -38,12 +39,9 @@ div.window-title {
     padding: .25rem;
 }
 
-h2#prompt-name {
-    padding: 1rem;
-}
-
-p#prompt-description {
-    padding: 1rem;
+div#prompt-content {
+    background-color: var(--c);
+    height: 100%;
 }
 
 div.divider {
@@ -66,10 +64,12 @@ div.divider.h {
 }
 
 div.prompt-monospace {
-    padding: .2rem;
+    padding: .1rem;
     background: var(--t);
     width: fit-content;
     border-radius: .2rem;
-    border: var(--s);
-    font-family: 'Roboto Mono'
+    border: 1px var(--s) solid;
+    font-family: 'Roboto Mono';
+    font-size: .8rem;
+    color: var(--txa)
 }
