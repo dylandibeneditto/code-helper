@@ -4,7 +4,6 @@ export default class PromptFormatter {
 
         this.title = this.json["title"];
         this.desc = this.surroundMonospace(this.json["description"]);
-        console.log(this.desc)
         this.cases = this.surroundMonospace(this.iterateCases(this.json["cases"]));
 
         document.getElementById("prompt-content").innerHTML = `<h1>${this.title}</h1> <div class="prompt-description">${this.desc}</div> ${this.cases}`;
@@ -35,7 +34,6 @@ export default class PromptFormatter {
             const c = cases[i]
             result += `<p class="case-title">Case ${i+1}</p> <div class="case-list"> <div>Input: <div class="case-data">${c.input}</div></div> <div>Output: <div class="case-data">${c.output}</div></div> <div>Explanation: <div class="case-data">${c.explanation}</div></div> </div>`
         }
-        console.log(result)
         return result
     }
 }
