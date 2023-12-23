@@ -99,3 +99,26 @@ div#prompt-description {
 div#code-wrap {
     gap: 0;
 }
+
+div#prompt-difficulty {
+    color: var(--txa);
+    gap: 0;
+    align-items: center;
+    font-size: 1rem;
+}
+
+div#difficulty-stars {
+    padding-left: .3rem;
+}
+
+div#difficulty-stars > * {
+    font-size: 1.2rem;
+}
+
+span.difficulty-filled {
+    color: var(--tx)
+}
+
+span.difficulty-outlined {
+    color: var(--s);
+}
