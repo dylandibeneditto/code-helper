@@ -7,7 +7,7 @@ export default class PromptFormatter {
         this.desc = this.surroundMonospace(this.json["description"]);
         this.cases = this.surroundMonospace(this.iterateCases(this.json["cases"]));
 
-        document.getElementById("prompt-content").innerHTML = `<h1>${this.title}</h1> <div class="prompt-description">${this.desc}</div> ${this.cases}`;
+        document.getElementById("prompt-content").innerHTML = `<h1>${this.title}</h1> <div id="prompt-difficulty">${this.difficulty}</div> <div id="prompt-description">${this.desc}</div> ${this.cases}`;
     }
 
     surroundMonospace(text) {
@@ -39,7 +39,6 @@ export default class PromptFormatter {
     }
 
     repeatStar(max) {
-
-        return "".repeat(max);
+        return '<span class="material-symbols-filled">star</span>'.repeat(max)+'<span class="material-symbols-filled">star</span>'.repeat(5-max);
     }
 }

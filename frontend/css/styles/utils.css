@@ -10,6 +10,22 @@
     src: url('../../static/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf')
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-filled {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 div.grid-horizontal {
     display: grid;
     grid-auto-flow: column;
