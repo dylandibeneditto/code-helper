@@ -100,19 +100,18 @@ div#code-wrap {
     gap: 0;
 }
 
-div#prompt-difficulty {
-    color: var(--txa);
-    gap: 0;
-    align-items: center;
-    font-size: 1rem;
-}
-
 div#difficulty-stars {
-    padding-left: .3rem;
+    color: var(--txa);
+    padding: .2rem .4rem;
+    background: var(--b);
+    width: fit-content;
+    border-radius: .6rem;
+    border: var(--s) 1px solid;
+    margin-top: .5rem;
 }
 
 div#difficulty-stars > * {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 span.difficulty-filled {
@@ -122,6 +121,9 @@ span.difficulty-filled {
 span.difficulty-outlined {
     color: var(--s);
 }
+
+
+
 
 div#difficulty-stars.color1 > span.difficulty-filled {
     color: var(--c1);
