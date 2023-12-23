@@ -42,6 +42,7 @@ div.window-title {
 div#prompt-content {
     background-color: var(--c);
     height: 100%;
+    padding: .5rem;
 }
 
 div.divider {
@@ -91,6 +92,6 @@ p.case-title {
     padding: .2rem 0;
 }
 
-p.prompt-description > * {
-    padding-bottom: 1rem;
+div.prompt-description {
+    padding: .8rem 0;
 }

@@ -34,8 +34,8 @@ export default class ProblemExperience {
         this.promptFormatter = new PromptFormatter(this.prompt);
 
         window.onload = function () {
-            this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60], .2)
-            this.codeDebug = new DynamicLayout(document.getElementById("code-wrap"), document.getElementById("code-debug"), "vertical", [40, 80], .8)
+            this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60], .25)
+            this.codeDebug = new DynamicLayout(document.getElementById("code-wrap"), document.getElementById("code-debug"), "vertical", [40, 80], .7)
 
             this.problemRunner = new ProblemRunner();
         }
