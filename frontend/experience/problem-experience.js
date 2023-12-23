@@ -16,7 +16,7 @@ export default class ProblemExperience {
         this.editor, this.codeDiv, this.code, this.problemRunner;
         this.prompt = {
             "title": '1. Hello World',
-            "description": 'Write a program which returns the string ;"Hello world"; HELLO ;"hello";',
+            "description": 'Write a program which returns the string ;"Hello world";',
             "cases": [
                 {
                     "input": "[]",
@@ -31,7 +31,6 @@ export default class ProblemExperience {
             ]
         }
         
-        console.log(this.prompt)
         this.promptFormatter = new PromptFormatter(this.prompt);
 
         window.onload = function () {

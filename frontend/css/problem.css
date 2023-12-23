@@ -71,5 +71,26 @@ div.prompt-monospace {
     border: 1px var(--s) solid;
     font-family: 'Roboto Mono';
     font-size: .8rem;
-    color: var(--txa)
+    color: var(--txa);
+    display: inline-block;
+}
+
+div.case-data {
+    color: var(--txa);
+    display: inline;
+}
+
+div.case-list {
+    padding: .4rem;
+    margin: .2rem;
+    border-left: var(--t) 2px solid;
+}
+
+p.case-title {
+    font-weight: bold;
+    padding: .2rem 0;
+}
+
+p.prompt-description > * {
+    padding-bottom: 1rem;
 }
