@@ -95,3 +95,7 @@ p.case-title {
 div.prompt-description {
     padding: .8rem 0;
 }
+
+div#code-wrap {
+    gap: 0;
+}

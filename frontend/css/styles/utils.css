@@ -37,7 +37,3 @@ div.flex-vertical {
 div.rounded-borders {
     border-radius: .7rem;
 }
-
-div#code-wrap {
-    gap: 0;
-}
