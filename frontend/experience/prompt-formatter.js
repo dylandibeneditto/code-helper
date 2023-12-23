@@ -3,6 +3,7 @@ export default class PromptFormatter {
         this.json = json;
 
         this.title = this.json["title"];
+        this.difficulty = this.repeatStar(this.json["difficulty"]);
         this.desc = this.surroundMonospace(this.json["description"]);
         this.cases = this.surroundMonospace(this.iterateCases(this.json["cases"]));
 
@@ -35,5 +36,10 @@ export default class PromptFormatter {
             result += `<p class="case-title">Case ${i+1}</p> <div class="case-list"> <div>Input: <div class="case-data">${c.input}</div></div> <div>Output: <div class="case-data">${c.output}</div></div> <div>Explanation: <div class="case-data">${c.explanation}</div></div> </div>`
         }
         return result
+    }
+
+    repeatStar(max) {
+
+        return "".repeat(max);
     }
 }
