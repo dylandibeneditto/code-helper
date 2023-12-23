@@ -5,6 +5,7 @@ html {
 }
 
 :root {
+    color-scheme: dark;
     --p: rgb(63, 125, 176);
     --bg: rgb(0,0,0);
     --b: rgb(39, 39, 39);
