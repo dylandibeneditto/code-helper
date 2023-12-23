@@ -1,17 +1,17 @@
 export default class DynamicLayout {
-    constructor(container, divider, direction, minMax) {
+    constructor(container, divider, direction, minMax, start) {
         this.container = container
         this.divider = divider
         this.direction = direction
         this.min = minMax[0];
         this.max = minMax[1];
-        
-        this.currentSplit = this.min
         this.active = false;
 
         this.csize;
         
         this.resize()
+
+        this.currentSplit = this.csize*start;
 
         this.displaySplit()
 
