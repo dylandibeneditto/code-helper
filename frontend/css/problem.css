@@ -122,3 +122,23 @@ span.difficulty-filled {
 span.difficulty-outlined {
     color: var(--s);
 }
+
+div#difficulty-stars.color1 > span.difficulty-filled {
+    color: var(--c1);
+}
+
+div#difficulty-stars.color2 > span.difficulty-filled {
+    color: var(--c2);
+}
+
+div#difficulty-stars.color3 > span.difficulty-filled {
+    color: var(--c3);
+}
+
+div#difficulty-stars.color4 > span.difficulty-filled {
+    color: var(--c4);
+}
+
+div#difficulty-stars.color5 > span.difficulty-filled {
+    color: var(--c5);
+}
