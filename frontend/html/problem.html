@@ -8,7 +8,8 @@
 
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 	<link rel="stylesheet" href="../css/styles/utils.css" />
 	<link rel="stylesheet" href="../css/styles/generic.css" />
@@ -56,19 +57,7 @@
 
 
 	<script src="../../node_modules/monaco-editor/min/vs/loader.js"></script>
-	<script>
-		require.config({ paths: { vs: '../../node_modules/monaco-editor/min/vs' } });
-
-		require(['vs/editor/editor.main'], function () {
-			var editor = monaco.editor.create(document.getElementById('container'), {
-				value: ['/*', ' * in { null }', ' * out { string }', ' */\n', 'function x() {', '\t', '}'].join('\n'),
-				language: 'javascript',
-				automaticLayout: true
-			});
-
-			editor.updateOptions({ theme: 'vs-dark' })
-		});
-	</script>
+	<script src="../experience/html-helpers/monaco-helper.js" type="module"></script>
 
 	<script src="../experience/html-helpers/problem.js" type="module"></script>
 
