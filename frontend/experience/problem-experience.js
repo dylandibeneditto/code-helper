@@ -7,32 +7,21 @@ import PromptFormatter from './prompt-formatter.js'
 
 export default class ProblemExperience {
     static instance;
-    constructor() {
+    constructor(prompt) {
         if(ProblemExperience.instance) {
             return ProblemExperience.instance
         }
         ProblemExperience.instance = this;
 
-        this.editor, this.codeDiv, this.code, this.problemRunner;
-        this.prompt = {
-            "title": '1. Hello World',
-            "difficulty": 1,
-            "description": 'Write a program which returns the string ;"Hello world";',
-            "cases": [
-                {
-                    "input": "[]",
-                    "output": '"Hello world"',
-                    "explanation": ';x() // "Hello world";\nThe function should always return "Hello world"'
-                },
-                {
-                    "input": '[10,"hello",[]]',
-                    "output": '"Hello world"',
-                    "explanation": ';x(10,"hello",[]) // "Hello world";\nThe function should always return "Hello world"'
-                }
-            ]
-        }
+        this.editor, this.codeDiv, this.code, this.problemRunner, this.promptFormatter;
+        this.promptIndex = 15;
 
-        this.promptFormatter = new PromptFormatter(this.prompt);
+        fetch('../../courses/fifty-javascript.json')
+            .then((response)=> response.json())
+            .then((json) => {
+                this.prompt = json.problems[this.promptIndex]
+                this.promptFormatter = new PromptFormatter(this.prompt);
+            })
 
         window.onload = function () {
             this.promptCodeLayout = new DynamicLayout(document.getElementById("main-wrap"), document.getElementById("prompt-code"), "horizontal", [20,60], .25)

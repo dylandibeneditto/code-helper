@@ -83,8 +83,12 @@ div.case-data {
 
 div.case-list {
     padding: .4rem;
+    padding-left: .8rem;
     margin: .2rem;
     border-left: var(--t) 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 p.case-title {
@@ -105,7 +109,7 @@ div#difficulty-stars {
     padding: .2rem .4rem;
     background: var(--b);
     width: fit-content;
-    border-radius: .6rem;
+    border-radius: .4rem;
     border: var(--s) 1px solid;
     margin-top: .5rem;
 }

@@ -1,71 +1,280 @@
 {
     "problems": [
         {
-            "title": "Problem 1: Hello World",
-            "description": "Write a function that prints 'Hello, World!' to the console. This is a basic introduction to writing functions in JavaScript."
+            "title": "1. Hello World",
+            "difficulty": 1,
+            "description": "Write a program which returns the string ;'Hello world';",
+            "cases": [
+                {
+                    "input": "[]",
+                    "output": "'Hello world'",
+                    "explanation": ";x() // 'Hello world';\nThe function should always return \"Hello world\""
+                },
+                {
+                    "input": "[10,'hello',[]]",
+                    "output": "'Hello world'",
+                    "explanation": ";x(10,'hello',[]) // 'Hello world';\nThe function should always return \"Hello world\""
+                }
+            ]
         },
         {
-            "title": "Problem 2: Simple Calculator",
-            "description": "Create a function that takes two numbers and an operator (+, -, *, /) as arguments and performs the corresponding operation."
+            "title": "2. Simple Calculator",
+            "difficulty": 1,
+            "description": "Create a function that takes two numbers and an operator (+, -, *, /) as arguments and performs the corresponding operation.",
+            "cases": [
+                {
+                    "input": "[5, 3, '+']",
+                    "output": "8",
+                    "explanation": ";calculate(5, 3, '+') // 8;\nThe function should perform addition."
+                },
+                {
+                    "input": "[10, 2, '*']",
+                    "output": "20",
+                    "explanation": ";calculate(10, 2, '*') // 20;\nThe function should perform multiplication."
+                }
+            ]
         },
         {
-            "title": "Problem 3: Odd or Even",
-            "description": "Write a function that determines if a given number is odd or even. Print 'Odd' or 'Even' accordingly."
+            "title": "3. Odd or Even",
+            "difficulty": 1,
+            "description": "Write a function that determines if a given number is odd or even. Print 'Odd' or 'Even' accordingly.",
+            "cases": [
+                {
+                    "input": "[7]",
+                    "output": "'Odd'",
+                    "explanation": ";checkOddEven(7) // 'Odd';\nThe function should correctly identify odd numbers."
+                },
+                {
+                    "input": "[12]",
+                    "output": "'Even'",
+                    "explanation": ";checkOddEven(12) // 'Even';\nThe function should correctly identify even numbers."
+                }
+            ]
         },
         {
-            "title": "Problem 4: Array Sum",
-            "description": "Write a function that calculates the sum of all elements in an array. This problem introduces array manipulation."
+            "title": "4. Array Sum",
+            "difficulty": 1,
+            "description": "Write a function that calculates the sum of all elements in an array. This problem introduces array manipulation.",
+            "cases": [
+                {
+                    "input": "[1, 2, 3, 4, 5]",
+                    "output": "15",
+                    "explanation": ";calculateArraySum([1, 2, 3, 4, 5]) // 15;\nThe function should sum all elements in the array."
+                },
+                {
+                    "input": "[10, -5, 8, 2]",
+                    "output": "15",
+                    "explanation": ";calculateArraySum([10, -5, 8, 2]) // 15;\nThe function should handle negative numbers."
+                }
+            ]
         },
         {
-            "title": "Problem 5: Reverse Array",
-            "description": "Create a function that reverses the elements of an array. For example, [1, 2, 3] becomes [3, 2, 1]."
+            "title": "5. Reverse Array",
+            "difficulty": 1,
+            "description": "Create a function that reverses the elements of an array. For example, [1, 2, 3] becomes [3, 2, 1].",
+            "cases": [
+                {
+                    "input": "[1, 2, 3, 4, 5]",
+                    "output": "[5, 4, 3, 2, 1]",
+                    "explanation": ";reverseArray([1, 2, 3, 4, 5]) // [5, 4, 3, 2, 1];\nThe function should reverse the order of array elements."
+                },
+                {
+                    "input": "['a', 'b', 'c']",
+                    "output": "['c', 'b', 'a']",
+                    "explanation": ";reverseArray(['a', 'b', 'c']) // ['c', 'b', 'a'];\nThe function should handle arrays of strings."
+                }
+            ]
         },
         {
-            "title": "Problem 6: Factorial",
-            "description": "Write a function that calculates the factorial of a given number. This problem introduces recursion."
+            "title": "6. Factorial",
+            "difficulty": 1,
+            "description": "Write a function that calculates the factorial of a given number. This problem introduces recursion.",
+            "cases": [
+                {
+                    "input": "[5]",
+                    "output": "120",
+                    "explanation": ";calculateFactorial(5) // 120;\nThe function should calculate the factorial of 5."
+                },
+                {
+                    "input": "[0]",
+                    "output": "1",
+                    "explanation": ";calculateFactorial(0) // 1;\nThe function should handle the factorial of 0."
+                }
+            ]
         },
         {
-            "title": "Problem 7: Fibonacci Sequence",
-            "description": "Write a function that generates the first n terms of the Fibonacci sequence. The Fibonacci sequence is defined by the recurrence relation: F(n) = F(n-1) + F(n-2) with initial conditions F(0) = 0 and F(1) = 1."
+            "title": "7. Fibonacci Sequence",
+            "difficulty": 2,
+            "description": "Write a function that generates the first n terms of the Fibonacci sequence. The Fibonacci sequence is defined by the recurrence relation: F(n) = F(n-1) + F(n-2) with initial conditions F(0) = 0 and F(1) = 1.",
+            "cases": [
+                {
+                    "input": "[5]",
+                    "output": "[0, 1, 1, 2, 3]",
+                    "explanation": ";generateFibonacci(5) // [0, 1, 1, 2, 3];\nThe function should generate the first 5 terms of the Fibonacci sequence."
+                },
+                {
+                    "input": "[8]",
+                    "output": "[0, 1, 1, 2, 3, 5, 8, 13]",
+                    "explanation": ";generateFibonacci(8) // [0, 1, 1, 2, 3, 5, 8, 13];\nThe function should generate the first 8 terms of the Fibonacci sequence."
+                }
+            ]
         },
         {
-            "title": "Problem 8: Palindrome Checker",
-            "description": "Write a function that checks if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward."
+            "title": "8. Palindrome Checker",
+            "difficulty": 3,
+            "description": "Write a function that checks if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.",
+            "cases": [
+                {
+                    "input": "['level']",
+                    "output": "true",
+                    "explanation": ";isPalindrome('level') // true;\nThe function should identify 'level' as a palindrome."
+                },
+                {
+                    "input": "['hello']",
+                    "output": "false",
+                    "explanation": ";isPalindrome('hello') // false;\nThe function should recognize 'hello' as not a palindrome."
+                }
+            ]
         },
         {
-            "title": "Problem 9: Prime Number Checker",
-            "description": "Write a function that determines whether a given number is prime or not. This problem involves basic number theory and conditionals."
+            "title": "9. Prime Number Checker",
+            "difficulty": 2,
+            "description": "Write a function that determines whether a given number is prime or not. This problem involves basic number theory and conditionals.",
+            "cases": [
+                {
+                    "input": "[7]",
+                    "output": "true",
+                    "explanation": ";isPrime(7) // true;\nThe function should correctly identify 7 as a prime number."
+                },
+                {
+                    "input": "[10]",
+                    "output": "false",
+                    "explanation": ";isPrime(10) // false;\nThe function should correctly identify 10 as not a prime number."
+                }
+            ]
         },
         {
-            "title": "Problem 10: Simple ToDo List",
-            "description": "Create a simple command-line ToDo list application. Users should be able to add, remove, and list tasks."
+            "title": "10. Simple ToDo List",
+            "difficulty": 2,
+            "description": "Create a simple command-line ToDo list application. Users should be able to add, remove, and list tasks.",
+            "cases": [
+                {
+                    "input": "['Add: Buy groceries', 'List', 'Remove: 1', 'List']",
+                    "output": "['Task added: Buy groceries', 'Tasks: Buy groceries', 'Task removed: Buy groceries', 'Tasks: ']",
+                    "explanation": ";todoList(['Add: Buy groceries', 'List', 'Remove: 1', 'List']) // ['Task added: Buy groceries', 'Tasks: Buy groceries', 'Task removed: Buy groceries', 'Tasks: '];\nThe function should perform basic ToDo list operations."
+                },
+                {
+                    "input": "['Add: Read book', 'Add: Exercise', 'List', 'Remove: 2', 'List']",
+                    "output": "['Task added: Read book', 'Task added: Exercise', 'Tasks: Read book, Exercise', 'Task removed: Exercise', 'Tasks: Read book']",
+                    "explanation": ";todoList(['Add: Read book', 'Add: Exercise', 'List', 'Remove: 2', 'List']) // ['Task added: Read book', 'Task added: Exercise', 'Tasks: Read book, Exercise', 'Task removed: Exercise', 'Tasks: Read book'];\nThe function should handle multiple ToDo list operations."
+                }
+            ]
         },
         {
-            "title": "Problem 11: Find Maximum Number",
-            "description": "Write a function that takes an array of numbers as an argument and returns the maximum number in the array."
+            "title": "11. Find Maximum Number",
+            "difficulty": 1,
+            "description": "Write a function that takes an array of numbers as an argument and returns the maximum number in the array.",
+            "cases": [
+                {
+                    "input": "[5, 8, 2, 1, 10]",
+                    "output": "10",
+                    "explanation": ";findMaxNumber([5, 8, 2, 1, 10]) // 10;\nThe function should correctly identify 10 as the maximum number."
+                },
+                {
+                    "input": "[-3, 0, -7, -1]",
+                    "output": "0",
+                    "explanation": ";findMaxNumber([-3, 0, -7, -1]) // 0;\nThe function should handle negative numbers and correctly identify 0 as the maximum number."
+                }
+            ]
         },
         {
-            "title": "Problem 12: Vowel Counter",
-            "description": "Write a function that counts the number of vowels in a given string. Consider both uppercase and lowercase vowels."
+            "title": "12. Vowel Counter",
+            "difficulty": 1,
+            "description": "Write a function that counts the number of vowels in a given string. Consider both uppercase and lowercase vowels.",
+            "cases": [
+                {
+                    "input": "['Hello World']",
+                    "output": "3",
+                    "explanation": ";countVowels('Hello World') // 3;\nThe function should correctly count the vowels in 'Hello World'."
+                },
+                {
+                    "input": "['Programming is Fun']",
+                    "output": "6",
+                    "explanation": ";countVowels('Programming is Fun') // 6;\nThe function should correctly count the vowels in 'Programming is Fun'."
+                }
+            ]
         },
         {
-            "title": "Problem 13: Power Function",
-            "description": "Write a function that calculates the power of a number. The function should take two parameters: the base and the exponent."
+            "title": "13. Power Function",
+            "difficulty": 1,
+            "description": "Write a function that calculates the power of a number. The function should take two parameters: the base and the exponent.",
+            "cases": [
+                {
+                    "input": "[2, 3]",
+                    "output": "8",
+                    "explanation": ";calculatePower(2, 3) // 8;\nThe function should correctly calculate 2 raised to the power of 3."
+                },
+                {
+                    "input": "[5, 2]",
+                    "output": "25",
+                    "explanation": ";calculatePower(5, 2) // 25;\nThe function should correctly calculate 5 raised to the power of 2."
+                }
+            ]
         },
         {
-            "title": "Problem 14: Average Calculator",
-            "description": "Write a function that calculates the average of an array of numbers."
+            "title": "14. Average Calculator",
+            "difficulty": 1,
+            "description": "Write a function that calculates the average of an array of numbers.",
+            "cases": [
+                {
+                    "input": "[4, 7, 12, 5, 8]",
+                    "output": "7.2",
+                    "explanation": ";calculateAverage([4, 7, 12, 5, 8]) // 7.2;\nThe function should correctly calculate the average of the given array."
+                },
+                {
+                    "input": "[1, 2, 3, 4, 5, 6]",
+                    "output": "3.5",
+                    "explanation": ";calculateAverage([1, 2, 3, 4, 5, 6]) // 3.5;\nThe function should correctly calculate the average of the given array."
+                }
+            ]
         },
         {
-            "title": "Problem 15: Array Deduplication",
-            "description": "Write a function that removes duplicate elements from an array and returns a new array without duplicates."
+            "title": "15. Array Deduplication",
+            "difficulty": 3,
+            "description": "Write a function that removes duplicate elements from an array and returns a new array without duplicates.",
+            "cases": [
+                {
+                    "input": "[1, 2, 2, 3, 4, 4, 5]",
+                    "output": "[1, 2, 3, 4, 5]",
+                    "explanation": ";removeDuplicates([1, 2, 2, 3, 4, 4, 5]) // [1, 2, 3, 4, 5];\nThe function should remove duplicates from the given array."
+                },
+                {
+                    "input": "[10, 20, 30, 10, 40, 20]",
+                    "output": "[10, 20, 30, 40]",
+                    "explanation": ";removeDuplicates([10, 20, 30, 10, 40, 20]) // [10, 20, 30, 40];\nThe function should remove duplicates from the given array."
+                }
+            ]
         },
         {
-            "title": "Problem 16: String Capitalization",
-            "description": "Write a function that capitalizes the first letter of each word in a given sentence."
+            "title": "16. String Capitalization",
+            "difficulty": 3,
+            "description": "Write a function that capitalizes the first letter of each word in a given sentence.",
+            "cases": [
+                {
+                    "input": "['hello world']",
+                    "output": "'Hello World'",
+                    "explanation": ";capitalizeWords('hello world') // 'Hello World';\nThe function should capitalize the first letter of each word in the given sentence."
+                },
+                {
+                    "input": "['programming is fun']",
+                    "output": "'Programming Is Fun'",
+                    "explanation": ";capitalizeWords('programming is fun') // 'Programming Is Fun';\nThe function should capitalize the first letter of each word in the given sentence."
+                }
+            ]
         },
         {
             "title": "Problem 17: Leap Year Checker",
+            "difficulty": 1,
             "description": "Write a function that determines if a given year is a leap year. Leap years are divisible by 4, but if a year is divisible by 100, it must also be divisible by 400."
         },
         {
