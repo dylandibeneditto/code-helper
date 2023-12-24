@@ -28,11 +28,14 @@ div#container {
 div#prompt {
     background-color: var(--b);
     overflow: hidden;
+    border: 1px solid var(--s);
+    border-right: none;
 }
 
 div#container-wrap {
     background-color: var(--b);
     overflow: hidden;
+    border: 1px solid var(--s);
 }
 
 div.window-title {
@@ -43,6 +46,7 @@ div#prompt-content {
     background-color: var(--c);
     height: 100%;
     padding: .5rem;
+    overflow-y: scroll;
 }
 
 div.divider {
